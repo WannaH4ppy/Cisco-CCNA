@@ -1,4 +1,4 @@
-<font color="blue"># Cisco Device (basics1.pkt)<\font>
+# Cisco Device (basics1.pkt)
 Dokumentacja techniczna z analizy operacyjnej przełączników (L2) i routerów (L3) w środowisku Cisco IOS.
 ## 1. Analiza Tablicy Adresów MAC (Layer 2)
 Skupienie na procesie budowania tablicy CAM (Content Addressable Memory) przez przełącznik:
