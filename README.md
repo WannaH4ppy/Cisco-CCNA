@@ -16,3 +16,8 @@ Badanie procesu podejmowania decyzji o przekazywaniu pakietów na poziomie sieci
 Praktyczne sprawdzenie przepływu danych w topologii:
 * [cite_start]**Testy ICMP:** Wykorzystanie narzędzia `ping` do weryfikacji pełnej ścieżki komunikacji (end-to-end)[cite: 11].
 * [cite_start]**Brama Domyślna:** Potwierdzenie roli interfejsów routera jako punktów wyjścia dla hostów z różnych podsieci[cite: 11].
+  
+# Cisco Device (basics2.pkt)
+
+* **Konfiguracja klientów DNS:** Implementacja obsługi nazw domenowych na routerach Cisco przy użyciu poleceń `ip domain-lookup` oraz `ip name-server`, umożliwiająca komunikację z wykorzystaniem nazw hostów zamiast adresów IP.
+* **Analiza mechanizmu ARP:** Weryfikacja działania protokołu Address Resolution Protocol poprzez badanie zawartości tablicy `show arp` oraz zrozumienie procesu mapowania adresów warstwy 3 na adresy fizyczne MAC w sieci lokalnej.
