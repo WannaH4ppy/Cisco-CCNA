@@ -1,28 +1,14 @@
-# Cisco Device (basics1.pkt)
-Dokumentacja techniczna z analizy operacyjnej przełączników (L2) i routerów (L3) w środowisku Cisco IOS.
-## 1. Analiza Tablicy Adresów MAC (Layer 2)
-Skupienie na procesie budowania tablicy CAM (Content Addressable Memory) przez przełącznik:
-* [cite_start]**Weryfikacja mapowania:** Analiza powiązań adresów fizycznych z portami przy użyciu `show mac address-table`[cite: 11].
-* [cite_start]**Proces uczenia (Learning):** Obserwacja dynamicznego uzupełniania tablicy po zainicjowaniu ruchu ICMP między hostami[cite: 11].
-* [cite_start]**Zarządzanie wpisami:** Rozróżnienie między wpisami dynamicznymi a statycznymi w pamięci przełącznika[cite: 11].
+# 🌐 Cisco Device (basics1.pkt)
 
-## 2. Funkcje Routera i Tablica Routingu (Layer 3)
-Badanie procesu podejmowania decyzji o przekazywaniu pakietów na poziomie sieciowym:
-* [cite_start]**Status interfejsów:** Monitorowanie stanu fizycznego i logicznego portów poleceniem `show ip interface brief`[cite: 11].
-* [cite_start]**Interpretacja tras:** Analiza tablicy routingu (`show ip route`) pod kątem sieci bezpośrednio podłączonych (C) oraz lokalnych (L)[cite: 11].
-* [cite_start]**Forwarding:** Zrozumienie mechanizmu wyboru trasy na podstawie docelowego adresu IP w nagłówku pakietu[cite: 11].
-
-## 3. Diagnostyka i Weryfikacja Łączności
-Praktyczne sprawdzenie przepływu danych w topologii:
-* [cite_start]**Testy ICMP:** Wykorzystanie narzędzia `ping` do weryfikacji pełnej ścieżki komunikacji (end-to-end)[cite: 11].
-* [cite_start]**Brama Domyślna:** Potwierdzenie roli interfejsów routera jako punktów wyjścia dla hostów z różnych podsieci[cite: 11].
+* **Analiza tablic operacyjnych (L2/L3):** Weryfikacja powiązań adresów MAC z portami przełącznika (`show mac address-table`) oraz badanie logiki wyboru tras w tablicy routingu (`show ip route`) dla sieci bezpośrednio podłączonych.
+* **Monitorowanie i diagnostyka interfejsów:** Sprawdzanie stanu fizycznego oraz logicznego portów (`show ip interface brief`) i weryfikacja roli interfejsów routera jako bram domyślnych (Default Gateway) poprzez testy łączności `ping`.
   
-# Cisco Device (basics2.pkt)
+# 🌐 Cisco Device (basics2.pkt)
 
 * **Konfiguracja klientów DNS:** Implementacja obsługi nazw domenowych na routerach Cisco przy użyciu poleceń `ip domain-lookup` oraz `ip name-server`, umożliwiająca komunikację z wykorzystaniem nazw hostów zamiast adresów IP.
 * **Analiza mechanizmu ARP:** Weryfikacja działania protokołu Address Resolution Protocol poprzez badanie zawartości tablicy `show arp` oraz zrozumienie procesu mapowania adresów warstwy 3 na adresy fizyczne MAC w sieci lokalnej.
 
-# Cisco Device (basics3.pkt)
+# 🌐 Cisco Device (basics3.pkt)
 
 * **Diagnostyka usług warstwy aplikacji:** Wykorzystanie narzędzia `telnet` do weryfikacji dostępności portów i stanu usług na serwerze DNS (10.10.10.10) oraz identyfikacja problemów z łącznością TCP.
 * **Weryfikacja konfiguracji serwera:** Analiza i naprawa błędów po stronie hosta usługowego, w tym przywracanie działania wyłączonych usług systemowych (DNS Service) oraz weryfikacja rekordów zasobów (Resource Records).
